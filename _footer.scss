@@ -1,0 +1,28 @@
+.footer_wrapper {
+    width: 100% ;
+    background-color: #0F141E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2em;
+    img{
+        width: 220px;
+    }
+    p {
+        color: white ;
+        font-family: $primaryFont;
+        font-size: 2rem;
+        font-weight: 600 ;
+        margin: 1.3em 0;
+        span {
+            color: $primaryColor;
+        }
+    }
+}
+
+
+@media (max-width : 525px ) {
+    .footer_wrapper {
+        flex-direction: column;
+    }
+}

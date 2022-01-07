@@ -1,0 +1,88 @@
+.filters_container {
+    width: 100%;
+    margin: 1em 0;
+    background-color: #f2f5fb;
+    padding: 1.5em 1em;
+    .all_filter {
+        background-color: navajowhite;
+        margin: 1em 0;
+        button  {
+            width: 100%;
+            background: #fff;
+            height: 46px;
+            text-align: center;
+            color: #2f3b48;
+            font-size: 15px;
+            line-height: 19px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 0 0 rgb(196, 196, 196);
+            border: 1px solid #e7edf3;
+            font-size: 1.1rem ;
+        }
+    }
+    .filter_row {
+
+        width: 100%;
+        display:none ;
+        justify-content: space-between;
+        margin: 1em 0;
+        main {
+            border: 1px solid #e7edf3;
+            box-shadow: 1px 1px 0 0 rgb(196, 196, 196);
+            padding: 1em 1.3em 1em 1.3em;
+            background: #fff;
+            border-radius: 10px;
+            position: relative;
+            width: 24%;
+            display: flex;
+            justify-content: space-between;
+            text-transform: capitalize;
+            font-size: 1.2rem;
+            font-family: $primaryFont;
+            color: $secondaryColor;
+            font-weight: 300;
+        }
+        &.row3 {
+            display: none ;
+            
+            justify-content: flex-end;
+            .filter_options {
+                a {
+                    font-family: $secondaryFont;
+                    color: #000;
+                    &.more {
+                        margin: 0 0 0 1em;
+                        color: $primaryColor ;
+                    }
+                    &.clear {
+                        transition: color .4s;
+                    }
+                    &.clear:hover {
+                        color: $primaryColor ;
+                    }
+                }
+            }
+        }
+      
+    }
+    .divider {
+        width : 100% ;
+        background-color:#afaeae55 ;
+        height: 1px ;
+        margin: 2em 0 0 0;
+    }
+}
+
+
+
+@media (min-width : 1024px ) {
+    .all_filter {
+        display: none ;
+    }
+    .filter_row {
+        display: flex !important;
+    &.row3 {
+        display: flex ;
+    }
+    }
+}

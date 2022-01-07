@@ -1,0 +1,85 @@
+.desktop_header_container {
+    width: 100%;
+    padding: 2em 1.5em ;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    .desktop_menu_left {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        img {
+            width: 170px;
+            height: 35px;
+        }
+        .desktop_menu_container {
+            ul {
+                margin: 0 0 0 0.7em;
+                li {
+                    display: inline-block;
+                    margin: 0 0.5em;
+                    a {
+                        color: white;
+                        font-weight: 500;
+                        display: flex;
+                        align-items: center;
+                        font-family: $primaryFont ;
+                        padding: 0 0.8em;
+                        
+                        i {
+                            transform: translate(8px, 2.5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .desktop_menu_right {
+        color: white;
+        width: 35%;
+        .login_btns {
+            display: flex;
+            align-items: center;
+            i.fa.fa-user {
+                font-size: 1.2rem;
+                color: $menuIcon ;
+            }
+            .login_text_container {
+                margin: 0 1em;
+                flex: 1;
+                font-family: $primaryFont ;
+                text-transform: capitalize;
+                padding: 0 2.3em;
+                display: flex;
+                font-size: 1.1rem;
+                justify-content: space-between;
+                .divider {
+                    width: 2px;
+                    min-height: 100%;
+                    background-color: #efefef55;
+                    margin: 0 0.5em;
+                }
+            }
+            a {
+                color: white;
+                button {
+                    border: 1px solid $primaryColor;
+                    outline: none;
+                    color: white;
+                    padding: 13px 25px 13px 20px;
+                    border-radius: 7px;
+                    font-size: 0.9rem ;
+                    font-family: $primaryFont ;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width : 1200px ) {
+    .desktop_header_container {
+        display: flex ;
+    }
+}
